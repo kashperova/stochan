@@ -1,0 +1,19 @@
+defaults:
+  - _self_
+optimizer:
+  _target_: torch.optim.Adam
+  lr: 1e-2
+lr_scheduler:
+  _target_: torch.optim.lr_scheduler.OneCycleLR
+  max_lr: 0.1
+  steps_per_epoch: 100
+  epochs: 2200
+solver:
+  _target_: utils.ode_solvers.EulerSolver
+seed: 42
+t_size: 10
+t_n_steps: 200
+n_epochs: 5000
+save_freq: 250
+frames_dir: spiral_3d_frames
+gif_filename: spiral_neural_ode.gif

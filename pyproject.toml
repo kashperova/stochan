@@ -1,0 +1,18 @@
+[project]
+name = "stochan"
+version = "0.1.0"
+description = "Stochastic calculus"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "hydra-core==1.3.2",
+    "imageio==2.37.0",
+    "numpy==1.26.0",
+    "plotly==6.0.0",
+    "pre-commit==4.1.0",
+    "torch==2.6.0",
+    "tqdm==4.67.1",
+]
+
+[tool.ruff]
+line-length = 115
